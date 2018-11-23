@@ -5,8 +5,8 @@
 A [Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set) polyfill for legacy browsers.
 
   * CDN via https://unpkg.com/@ungap/set
-  * ESM via `import WeakSet from '@ungap/set'`
-  * CJS via `const WeakSet = require('@ungap/set')`
+  * ESM via `import Set from '@ungap/set'`
+  * CJS via `const Set = require('@ungap/set')`
 
 Compatible down to IE9, works well with ES5 shim upfront in IE8 (and maybe lower too).
 
