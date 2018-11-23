@@ -4,26 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>ungap Map</title>
+  <title>ungap Set</title>
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.7/es5-shim.min.js">
+    </script><script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.7/es5-sham.min.js"></script>
+  <![endif]-->
   <script src="global.js"></script>
   <script type="module">
-  import M from '../esm/index.js';
-  window.M = M;
+  import S from '../esm/index.js';
+  window.S = S;
   </script>
   <script>
   this.onload = function () {
-    if (!this.M)
+    if (!this.S)
       loadScript('../min.js', function () {
-        loadTest(Map, 'Map!');
+        loadTest(Set, 'Set!');
       });
     else {
-      console.assert(M === Map);
-      loadTest(Map, 'Map!');
+      console.assert(S === Set);
+      loadTest(Set, 'Set!');
     }
   };
   </script>
 </head>
-<body>
-  
-</body>
 </html>
